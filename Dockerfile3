@@ -12,7 +12,7 @@ COPY jenkins.war .
 
 ENTRYPOINT ["java","-jar","jenkins.war"]
 
-EXPOSE 80
+EXPOSE 90
 
 
 
