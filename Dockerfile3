@@ -1,0 +1,25 @@
+FROM jenkins/jenkins
+
+USER root
+
+
+RUN apt-get update -y
+
+RUN apt-get install openjdk-17-jre-headless -y
+
+
+COPY jenkins.war .
+
+ENTRYPOINT ["java","-jar","jenkins.war"]
+
+EXPOSE 80
+
+
+
+
+
+
+
+
+
+
